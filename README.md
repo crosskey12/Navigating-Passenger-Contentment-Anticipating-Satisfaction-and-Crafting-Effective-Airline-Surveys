@@ -6,7 +6,7 @@ The project aims to leverage machine learning techniques to analyse the provided
 ![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]([https://github.com/Pr0-C0der/exoplanet-detection/blob/main/LICENSE](https://github.com/crosskey12/Navigating-Passenger-Contentment-Anticipating-Satisfaction-and-Crafting-Effective-Airline-Surveys/blob/master/LICENSE))
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/prathamesh-gadekar-b7352b245/)](https://www.linkedin.com/in/prathamesh-gadekar-b7352b245/)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aditya-nagulpelli/)](https://www.linkedin.com/in/prathamesh-gadekar-b7352b245/)
 
 ## Table of Contents
 

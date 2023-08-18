@@ -1,5 +1,5 @@
 # Navigating-Passenger-Contentment-Anticipating-Satisfaction-and-Crafting-Effective-Airline-Surveys
-The project aims to leverage machine learning techniques to analyse the provided survey data and improve user experience. By training a model on the provided dataset, we seek to uncover patterns and features indicative of exoplanet presence, enabling the model to make predictions on unseen data.
+This project aims to revolutionize the way airlines collect and analyze customer feedback by reducing the number of survey questions while maintaining the depth of insights required for informed decision-making.
 
 ![Scikit-learn](https://img.shields.io/badge/Scikit-learn-FF0000?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
@@ -82,11 +82,22 @@ The dynamic interplay of recall, precision, and the F1-score underscores the com
 
 
 # Data Preprocessing
-In the data pre-processing phase, several steps are taken to prepare the dataset for the exoplanet detection project. 
+In the data pre-processing phase, several steps are taken to prepare the dataset.
+
+- Data Cleaning - We have replaced null values in "Departure Delay in Minutes" by values in "Arrival Delay in Minutes" as it was found that these two features have linear correlation.
+- Pre processing - We have replaced categorical data with numerical data and dropped 2 unwanted index,id columns.
 
 # Modelling 
-In this project, we explore various Machine Learning models to to accurately predict the presence or absence of exoplanets 
+In this project, we explore various Machine Learning models to to accurately predict the right questions.
+
+We have compared many base models and found that Random Forest had the best accuracy.Hence, we used RF to perform forward Feature Selection using mlxtend(intel ml library) function to reduce number of columns from 22 to 10. We saw that the performance had drop a little so we explored performance of various ensembles and chose Stacking Classifier with RF and SVM as base estimator and LR as final estimator.
 # Results
 The results of the project are as follows:
+
+Classification report with 22 columns:
+
+Classification report with 10 columns(Stacking Classifier):
+
 # Conclusion
 
+We have successfully helped airline eliminate questions from survey (thereby enchancing user experience by reducing the lengthy and tedious nature of customer feedback surveys) without affecting metrics for passenger satisfaction level prediction

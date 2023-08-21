@@ -79,7 +79,20 @@ The dynamic interplay of recall, precision, and the F1-score underscores the com
 
 # Exploratory Data Analysis
 
-
+- Customers between age 40-60 show high loyalty rate and often purchase buissness class for buisness travel.
+- Customers not between age 40-60 show 20% low loyalty rate and are more likely to purchase Eco class,
+-  Satisfied customers of both class are mostlt travelling for buisness(96%) and 70-80+% purchase buisness class
+- Unsatisfied customers of both class show high personal travel(50%) and ^60%+ Eco class purchases
+- 40-60 satified customers were 98% loyal customers and 96% travelled for buisness
+- More than 75% customers who took long flight were neutral or happy about Online Boarding,seat comfort,Inflight entertainment,On-Board service,leg room service,baggage handling,checkin service,inflight service and cleanliness.However,such trend is only seen with seat comfort and baggaeg handling for customers who preffered short flight.
+- People who took short flight were generally less happy with Online Boarding,Inflight entertainment,On-Board service,leg room service,checkin service,inflight service and cleanliness.
+- Most the the people taking flights >1500 are loyal customers(96%) and purchase business class(83%).
+- While people with less than 1500 flight distance shoe 21% drop in loyalty count and 59% purchase eco class.
+- For 1500+ Personal travel and Eco class purchases led to unsatisfied customers i.e. very few people for 1500+ were satisfied with eco class.
+- Amount of personal travel and Eco classs purchases are consistently high for unsatisfied customers, like 71% of unsatisfied customers for -1500 purchased Eco class.
+ - 95%+ customers in 40-60 and 1500+ are loyal customers.
+- 80% percent customers in this segment were neutral or dissatisfied with Eco and Eco Plus class.
+- Almost all the customers 40-60,1500+ and satisfied were (100%)loyal customers travelling for buisness reason and purchasing Business
 
 # Data Preprocessing
 In the data pre-processing phase, several steps are taken to prepare the dataset.
@@ -90,7 +103,9 @@ In the data pre-processing phase, several steps are taken to prepare the dataset
 # Modelling 
 In this project, we explore various Machine Learning models to to accurately predict the right questions.
 
-We have compared many base models and found that Random Forest had the best accuracy.Hence, we used RF to perform forward Feature Selection using mlxtend(intel ml library) function to reduce number of columns from 22 to 10. We saw that the performance had drop a little so we explored performance of various ensembles and chose Stacking Classifier with RF and SVM as base estimator and LR as final estimator.
+We have compared 10 base models and found that Random Forest had the best accuracy.Hence, we used RF to perform forward Feature Selection using mlxtend(intel ml library) function to reduce number of columns from 22 to 10. We saw that the performance had drop a little so we explored performance of various ensembles and chose Stacking Classifier with RF and SVM as base estimator and LR as final estimator.
+(Note - Hypertuning was performed using gridsearchcv but default parameters we found to be best (Not for SVM))
+
 # Results
 The results of the project are as follows:
 

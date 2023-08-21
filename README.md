@@ -98,7 +98,10 @@ The dynamic interplay of recall, precision, and the F1-score underscores the com
 In the data pre-processing phase, several steps are taken to prepare the dataset.
 
 - Data Cleaning - We have replaced null values in "Departure Delay in Minutes" by values in "Arrival Delay in Minutes" as it was found that these two features have linear correlation.
-- Pre processing - We have replaced categorical data with numerical data and dropped 2 unwanted index,id columns.
+- Gender is removed as our data is equally dist for male and female in all terms
+- Flight had log normal dist so it was log transformed to give approx gaussian dist
+- Class Customer Type Type of Travel satisfaction were cenverted from categorical data to numerical data
+- Mean centering and Scaling (Normalization) was done
 
 # Modelling 
 In this project, we explore various Machine Learning models to to accurately predict the right questions.
